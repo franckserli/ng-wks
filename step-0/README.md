@@ -1,5 +1,5 @@
 # Etape 0 - Installation de l'environnement, création d'un module Angular et du premier TU
-Positionnez vous dans le dossier `step-0`.
+Positionnez vous dans le répertoire `step-0`.
 
 ## Hello {{AngularJS}}
 
@@ -269,7 +269,7 @@ preLoaders: [
 
 Pour valider la configuration, vous pouvez :
 + démarrer **Webpack Dev Server**
-+ modifier une ligne de `app.js` (par exemple, ajouter un second `;` à la fin d'une ligne)
++ modifier une ligne de `app.js` (par exemple, en ajoutant un second `;` à la fin d'une ligne)
 + observer le résultat : une erreur apparaît dans la console!
 
 ## Tests
@@ -288,7 +288,7 @@ Comme le code souce à tester est en ES6, nous utilisons webpack, afin qu'il tra
 A cette fin, nous allons ajouter le fichier `webpack.karma.context.js` qui permet de sélectionner l'ensemble des fichiers `.spec.js` comme sources de tests :
 
 ```javascript
-let context = require.context('./app', true, /\.spec\.js/);
+const context = require.context('./app', true, /\.spec\.js/);
 context.keys().forEach(context);
 ```
 
@@ -353,7 +353,7 @@ Nous allons créer une classe et un test pour valider la configuration des tests
 
 Créer le fichier `app/FirstClass.js` qui contient notre classe à tester, ce fichier est vide pour l'instant.
 
-Créer le fichier `app/FirstClass.spec.js`, notre test :
+Créer le fichier `app/FirstClass.spec.js`, le test qui correspond à `app/FirstClass.js` :
 ```javascript
 /* eslint no-undef:0 */
 import { assert } from 'chai';
@@ -397,6 +397,9 @@ export default class FirstClass {
   }
 }
 ```
+
+Modifiez la classe jusqu'à ce que le test passe.
+
 
 ## Prochaine étape
 
