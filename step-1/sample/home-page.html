@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <style type="text/css">
+            @charset "UTF-8";
+            .ng-cloak,
+            .ng-hide:not(.ng-hide-animate),
+            .x-ng-cloak,
+            [data-ng-cloak],
+            [ng-cloak],
+            [ng\:cloak],
+            [x-ng-cloak] {
+                display: none !important;
+            }
+            ng\:form {
+                display: block;
+            }
+            .ng-animate-shim {
+                visibility: hidden;
+            }
+            .ng-anchor {
+                position: absolute;
+            }
+
+        </style>
+        <meta charset="UTF-8">
+        <title>Workshop AngularJS</title>
+        <link href="../../../public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../public/css/wine.css" rel="stylesheet">
+        <link href="../../../public/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    </head>
+    <body cz-shortcut-listen="true">
+        <section id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Ma cave</h2>
+                        <h3 class="section-subheading text-muted">Notes et impressions</h3>
+                        <input class="col-lg-6 col-lg-offset-3 ng-pristine ng-untouched ng-valid ng-empty" type="text">
+                    </div>
+                </div>
+                <section id="cards">
+                    <!-- WTF??? -->
+                    <div class="row">
+
+                    <wine-card >
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/cormeil-figeac.png" class="img-responsive" alt="" src="../../../public/img/wines/cormeil-figeac.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Chateau Cormeil Figeac
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bordeaux</p>
+                                <p class="text-muted ng-binding">2005</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/cote-beaune-village.png" class="img-responsive" alt="" src="../../../public/img/wines/cote-beaune-village.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Côte de Beaune Villages - Joseph Drouin
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bourgogne</p>
+                                <p class="text-muted ng-binding">2005</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/charme-cos-labory.png" class="img-responsive" alt="" src="../../../public/img/wines/charme-cos-labory.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Charme de Cos Labory
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bordeaux</p>
+                                <p class="text-muted ng-binding">2001</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/chevrol-bel-air.png" class="img-responsive" alt="" src="../../../public/img/wines/chevrol-bel-air.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Château Chevrol Bel Air
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bordeaux</p>
+                                <p class="text-muted ng-binding">2000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/chantalouette.png" class="img-responsive" alt="" src="../../../public/img/wines/chantalouette.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Château Chantalouette
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bordeaux</p>
+                                <p class="text-muted ng-binding">1999</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/cheval-noir.png" class="img-responsive" alt="" src="../../../public/img/wines/cheval-noir.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Cheval Noir
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bordeaux</p>
+                                <p class="text-muted ng-binding">1997</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="" class="portfolio-link" ng-click="$ctrl.edit = $ctrl.desc">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-pencil-square-o fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img ng-src="../../../public/img/wines/clarendelle.png" class="img-responsive" alt="" src="../../../public/img/wines/clarendelle.png">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 class="ng-binding">Clarendelle 'Inspiré par Haut Brion'
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                    <span class="glyphicon glyphicon-star ng-scope wine-star"></span>
+                                </h4>
+                                <p class="ng-binding">Bordeaux</p>
+                                <p class="text-muted ng-binding">1984</p>
+                            </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </section>
+
+
+                </body>
+            </html>
