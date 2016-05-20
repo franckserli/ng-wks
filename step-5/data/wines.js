@@ -1,0 +1,52 @@
+export default [
+  {
+    id: 'chantalouette',
+    name: 'Château Chantalouette',
+    type: 'Rouge',
+    appellation: { name: 'Pomerol', region: 'Bordeaux' },
+    pic: 'chantalouette/image',
+  },
+  {
+    id: 'charme-cos-labory',
+    name: 'Charme de Cos Labory',
+    type: 'Rouge',
+    appellation: { name: 'Saint-Estèphe', region: 'Bordeaux' },
+    pic: 'charme-cos-labory/image',
+  },
+  {
+    id: 'cheval-noir',
+    name: 'Cheval Noir',
+    type: 'Rouge',
+    appellation: { name: 'Saint-Emilion', region: 'Bordeaux' },
+    pic: 'cheval-noir/image',
+  },
+  {
+    id: 'chevrol-bel-air',
+    name: 'Château Chevrol Bel Air',
+    type: 'Rouge',
+    appellation: { name: 'Lalande-de-Pomerol', region: 'Bordeaux' },
+    rating: 2,
+    pic: 'chevrol-bel-air/image',
+  },
+  {
+    id: 'clarendelle',
+    name: 'Clarendelle \'Inspiré par Haut Brion\'',
+    type: 'Blanc',
+    appellation: { name: 'Bordeaux', region: 'Bordeaux' },
+    pic: 'clarendelle/image',
+  },
+  {
+    id: 'cormeil-figeac',
+    name: 'Chateau Cormeil Figeac',
+    type: 'Rouge',
+    appellation: { name: 'Saint-Emilion', region: 'Bordeaux' },
+    pic: 'cormeil-figeac/image',
+  },
+  {
+    id: 'cote-beaune-village',
+    name: 'Côte de Beaune Villages - Joseph Drouin',
+    type: 'Rouge',
+    appellation: { name: 'Côte de Beaune Villages', region: 'Bourgogne' },
+    pic: 'cote-beaune-village/image',
+  },
+];
