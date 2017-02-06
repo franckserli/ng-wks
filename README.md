@@ -69,6 +69,3 @@ Téléchargez et installez Atom, puis installez les packages suivants :
   * Approche par état
   * UI-Router
 * [Etape 5](/step-5) Protractor
-  * Configuration
-  * E2e test
-* [Etape 6](/step-6) RXjs et Promise
