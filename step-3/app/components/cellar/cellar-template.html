@@ -1,0 +1,21 @@
+<section id="portfolio" class="bg-light-gray" ng-hide="$ctrl.editedWine">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Ma cave</h2>
+        <h3 class="section-subheading text-muted">Notes et impressions</h3>
+        <input ng-model="$ctrl.query" class="col-lg-6 col-lg-offset-3" type="text" class="form-control" />
+      </div>
+    </div>
+    <section id="cards">
+      <div class="row">
+        <wine-card ng-repeat="wine in $ctrl.wines | orderBy: '-date' | filter:$ctrl.query track by $index" wine-desc="wine" edit="$ctrl.editWine(wine)" ></wine-card>
+      </div>
+    </section>
+  </div>
+</section>
+<section id ="edit" ng-show="$ctrl.editedWine">
+  <wine-edit wine="$ctrl.editedWine">
+    <h2>Edition</h2>
+  </wine-edit>
+</section>
