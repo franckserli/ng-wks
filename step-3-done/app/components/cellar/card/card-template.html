@@ -1,0 +1,17 @@
+<div class="col-md-4 col-sm-6 portfolio-item">
+  <a href="" class="portfolio-link" ng-click="$ctrl.edit({wine: $ctrl.desc})">
+    <div class="portfolio-hover">
+      <div class="portfolio-hover-content">
+        <i class="fa fa-pencil-square-o fa-3x"></i>
+      </div>
+    </div>
+    <img ng-src="{{$ctrl.desc.pic}}" class="img-responsive" alt="">
+  </a>
+  <div class="portfolio-caption">
+    <h4>{{$ctrl.desc.name}}
+      <wine-rating rating="$ctrl.desc.rating"></wine-rating>
+    </h4>
+    <p>{{$ctrl.desc.appellation.region}}</p>
+    <p class="text-muted">{{$ctrl.desc.date}}</p>
+  </div>
+</div>
