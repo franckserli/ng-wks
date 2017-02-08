@@ -1,0 +1,26 @@
+<section id="portfolio" class="bg-light-gray" ng-hide="$ctrl.editedCard">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Ma cave</h2>
+        <h3 class="section-subheading text-muted">Notes et impressions</h3>
+        <input ng-model="query" class="col-lg-6 col-lg-offset-3" type="text" class="form-control" />
+      </div>
+    </div>
+    <section id="cards">
+      <div class="row">
+        <wine-card edit="$ctrl.editedCard" desc="{id:'chantalouette', name:'Château Chantalouette', type:'Rouge', appellation:{name:'Pomerol', region:'Bordeaux'}, rating:1, date:1999, pic:'chantalouette.png'}"></wine-card>
+        <wine-card edit="$ctrl.editedCard" desc="{id:'charme-cos-labory', name:'Charmede Cos Labory', type:'Rouge', appellation:{name:'Saint-Estèphe', region:'Bordeaux'}, rating:4, date:2001, pic:'charme-cos-labory.png'}"></wine-card>
+        <wine-card edit="$ctrl.editedCard" desc="{id:'cheval-noir', name:'Cheval Noir', type:'Rouge', appellation:{name:'Saint-Emilion', region:'Bordeaux'}, rating:5, date:1997, pic:'cheval-noir.png'}"></wine-card>
+        <wine-card edit="$ctrl.editedCard" desc="{id:'chevrol-bel-air', name:'Château Chevrol Bel Air', type:'Rouge', appellation:{name:'Lalande-de-Pomerol', region:'Bordeaux'}, rating:2, date:2000, pic:'chevrol-bel-air.png'}"></wine-card>
+        <wine-card edit="$ctrl.editedCard" desc="{id:'clarendelle', name:'Clarendelle\'Inspirépar Haut Brion\'', type:'Blanc', appellation:{name:'Bordeaux', region:'Bordeaux'}, rating:2, date:1984, pic:'clarendelle.png'}"></wine-card>
+        <wine-card edit="$ctrl.editedCard" desc="{id:'cormeil-figeac', name:'Chateau Cormeil Figeac', type:'Rouge', appellation:{name:'Saint-Emilion', region:'Bordeaux'}, rating:5, date:2005, pic:'cormeil-figeac.png'}"></wine-card>
+        <wine-card edit="$ctrl.editedCard" desc="{id:'cote-beaune-village', name:'CôtedeBeaune Villages-Joseph Drouin', type:'Rouge', appellation:{name:'CôtedeBeauneVillages', region:'Bourgogne'}, rating:1, date:2005, pic:'cote-beaune-village.png'}"></wine-card>
+      </div>
+    </section>
+  </div>
+</section>
+<section id ="edit" ng-show="$ctrl.editedCard">
+  <h1>EDIT</h1>
+  <button type="submit" ng-click="$ctrl.editedCard=undefined" class="btn btn-xl">Return !</button>
+</section>
