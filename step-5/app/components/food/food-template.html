@@ -1,0 +1,11 @@
+<div ng-if="$ctrl.wines.length === 1">
+  <h1>Accords mets/vin pour {{$ctrl.wines[0].name}}.</h1>
+  <!-- <a ui-sref="">Retour à la fiche</a> -->
+</div>
+<div ng-if="$ctrl.wines.length > 1">
+  <h3>Choisissez un vin : </h3>
+  <select ng-options="wine as wine.name for wine in $ctrl.wines track by wine.id" ng-model="$ctrl.wines.selected">Parmi ceux ci...</select>
+</div>
+<div ng-show="$ctrl.wines.selected">
+  <h1>Accords mets/vin pour {{$ctrl.wines.selected.name}}.</h1>
+</div>
